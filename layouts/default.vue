@@ -4,9 +4,9 @@
     <div class="page-content">
       <div class="inner">
         <Nuxt />
-        <Footer />
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -15,4 +15,9 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  
+}
 </style>
