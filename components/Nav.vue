@@ -12,14 +12,18 @@
   #main-nav {
 
     ul {
-      padding: 50px 0;
+      padding: 40px 0;
       display: flex;
-      justify-content: flex-end;      
+      justify-content: flex-end;
+      @include breakpoint(small) {
+       padding: 20px 0;
+      }   
       li {
         margin-left: 20px;
+        margin-right: 10px;
         a {
           text-transform: uppercase;
-          letter-spacing: 0.1em;
+          letter-spacing: 0.3em;
         }
       }
     }
