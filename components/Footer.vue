@@ -2,7 +2,7 @@
   <footer class="container">
     <div class="links">
       <div class="empty"></div>
-      <div class="legal">SIMCR, LLC &copy; {{ new Date().getFullYear() }} ALL RIGHTS RESERVED</div>
+      <div class="legal">SICMR, LLC &copy; {{ new Date().getFullYear() }} ALL RIGHTS RESERVED</div>
       <ul class="socials">
         <li>
           <a target="_blank" href="https://www.instagram.com/marsargo"><img src="instagram.svg" alt="" /></a>
