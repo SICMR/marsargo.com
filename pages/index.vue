@@ -2,7 +2,7 @@
 <div class="container">
   <div class="main-vibe">
     <div class="the-image">
-      <img src="/image.png" alt="">
+      <img src="/img.jpg" alt="">
     </div>
     <ul class="main-links">
       <li><a target="_blank" href="https://open.spotify.com/artist/1eArHQcMQC93pQSBaGWpog">Listen on Spotify</a></li>
