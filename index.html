@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="typing-area"> 
+    <h1 class= "typing" id="typing">... </h1>
+  </div> 
+  <div class="footer">SICMR, LLC © 2022 ALL RIGHTS RESERVED</div>  
+</body>
+</html>
+
+<script>
+  const texts = ['...'];
+let word = 0; 
+let letterIndex = 0; 
+let currentText = ''; 
+let letter = ''; 
+
+(function type() {
+
+  if (word == texts.length) {
+    word = 0;
+  }
+ 
+  currentText = texts[word];
+  letter = currentText.slice(0, ++letterIndex);
+  document.querySelector('#typing').textContent = letter;
+
+  if (letter.length == currentText.length) {
+    word++;
+    letterIndex = 0;
+  }
+  
+  setTimeout(type, 300);
+})();
+</script>
+
+<style>
+  :root {
+  --background-color: #fff;
+  --gradient: black;
+}
+
+body{
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter";
+  font-weight: bold;
+  margin: 0;
+}
+
+.typing {
+  font-family: monospace;
+  background: black;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  position: relative;
+}
+.typing-area {
+  background: white;
+  width: 50px;
+}
+.typing::after{
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 2px;
+  background-color: black;
+  color: black;
+  padding: 1px;
+  left: 100%;
+  display: none;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+    background-color: #9b70c6;
+  }
+  50% {
+    opacity: 1;
+      background-color: #8bfbf5;
+  }
+  100% {
+    opacity: 0;
+      background-color: #9b70c6;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+</style>

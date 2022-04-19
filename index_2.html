@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="dots"> 
+    <div></div>
+    <div></div>
+    <div></div>
+  </div> 
+  <div class="footer">SICMR, LLC © 2022 ALL RIGHTS RESERVED</div>  
+</body>
+</html>
+
+
+
+<style>
+  :root {
+  --background-color: #fff;
+  --gradient: black;
+}
+
+body{
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter";
+  font-weight: bold;
+  margin: 0;
+}
+
+.dots {
+  display: flex;
+}
+
+.dots div {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #000000;
+  margin: 0 2px;
+  animation: fade 1s infinite;
+}
+
+.dots div:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.dots div:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+</style>
