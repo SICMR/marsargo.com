@@ -20,8 +20,7 @@
 
 <style lang="scss" scoped>
 footer {
-  //padding-top: 50px;
-  margin-top: auto;
+  margin: 30px 0;
   letter-spacing: 0.05em;
 }
 .links {

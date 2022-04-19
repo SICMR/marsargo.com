@@ -16,5 +16,11 @@ a {
 }
 
 .container {
-  @include max-1600;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
+
+  @include breakpoint(small) {
+    padding: 0 20px;
+  }
 }

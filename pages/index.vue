@@ -1,6 +1,5 @@
 <template>
-<div class="container">
-  <div class="main-vibe">
+  <div class="main-vibe container">
     <div class="the-image">
       <img src="/img.jpg" alt="">
     </div>
@@ -10,7 +9,6 @@
       <li>Contact <a href="mailto:idonthaveamanager@gmail.com">idonthaveamanager@gmail.com</a></li>
     </ul>
   </div>
-</div>
 </template>
 
 <script>
@@ -23,49 +21,49 @@ export default {
 <style lang="scss" scoped>
   .main-vibe {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
+    padding: 0 10vw;
+
     @include breakpoint(small) {
+      // padding: 0 20px;
       display: block;
     }    
+
     .the-image {
-      padding: 0 0 0 7.6%;
-      width: 45%;
+      width: 40%;
+    
       @include breakpoint(small) {
         padding: 0;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         margin-top: 40px;
       }         
+      
       img {
         max-width: 100%;
         height: auto;
       }
     }
+
     .main-links {
-      margin-left: 7.2%;
-      margin-bottom: 5.5%;
-      font-size: 18px;
+      font-size: clamp(12px, 1.3vw, 18px);
       letter-spacing: 0.15em;
+      margin-left: 4vw;
+
       @include breakpoint(small) {
         padding: 0;
         width: 100%;
-        font-size: 12px;
-        margin: 30px 20px;
-      }         
+        margin: 30px 0;
+      }    
+
       li {
         margin-bottom: 14px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
     }
   }
-  // img  {
-  //   max-width: 200px;
-  //   height: auto;
-  //   display: block;
-  //  // margin: 100px;
-  //   @include breakpoint(small) {
-  //     margin: 20px;
-  //     max-width: 80%;
-  //   }    
-  // }
 </style>
