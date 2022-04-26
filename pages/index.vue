@@ -4,7 +4,7 @@
       <img src="/img.jpg" alt="">
     </div>
     <ul class="main-links">
-      <li><a target="_blank" href="https://open.spotify.com/artist/1eArHQcMQC93pQSBaGWpog">Listen on Spotify</a></li>
+      <li><a target="_blank" href="https://open.spotify.com/artist/3WFBuQFguwRNZcPyQrtBEU">Listen on Spotify</a></li>
       <li><a target="_blank" href="https://www.youtube.com/channel/UCS42Pk262iOKUXUW9XW_SOg">Youtube</a></li>
       <li>Contact <a href="mailto:idonthaveamanager@gmail.com">idonthaveamanager@gmail.com</a></li>
     </ul>
