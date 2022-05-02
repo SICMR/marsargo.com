@@ -11,12 +11,27 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted: function () {
+    this.$nextTick(function () {
+      this.onResize();
+    })
+    window.addEventListener('resize', this.onResize)
+  },
+  methods: {
+    onResize() {
+      console.log('Resized')
+      if (window) {
+        document.documentElement.style.setProperty('--100vh', `${window.innerHeight}px` )        
+      }
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 .page-wrapper {
-  min-height: 100vh;
+  min-height: var(--100vh);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

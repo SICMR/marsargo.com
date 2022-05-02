@@ -2,7 +2,6 @@
   <nav id="main-nav" class="container">
     <ul>
       <li>
-        <a href="#">Shop</a>
       </li>    
     </ul>
   </nav>

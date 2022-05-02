@@ -42,7 +42,7 @@ footer {
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 5px;
+  //margin-bottom: 5px;
   margin-right: 20px;
   @include breakpoint(small) {
     margin: 0 0 15px 0;
@@ -78,8 +78,8 @@ footer {
   padding: 0;
   text-align: center;
   font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  margin-bottom: 10px;
+  letter-spacing: 0.25em;
+  margin-bottom: 3px;
   margin-left: 11%;
   @include breakpoint(small) {
     text-align: center;

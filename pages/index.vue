@@ -47,7 +47,7 @@ export default {
     }
 
     .main-links {
-      font-size: clamp(12px, 1.3vw, 18px);
+      font-size: clamp(12px, 1.3vw, 15px);
       letter-spacing: 0.15em;
       margin-left: 4vw;
 
