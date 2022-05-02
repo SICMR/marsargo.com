@@ -28,6 +28,7 @@ export default {
     @include breakpoint(small) {
       // padding: 0 20px;
       display: block;
+      margin-bottom: 15vh;
     }    
 
     .the-image {
