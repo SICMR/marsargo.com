@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     onResize() {
-      console.log('Resized')
       if (window) {
         document.documentElement.style.setProperty('--100vh', `${window.innerHeight}px` )        
       }
