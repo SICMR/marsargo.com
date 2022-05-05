@@ -1,3 +1,7 @@
+const meta_stuff = {
+  description: 'Angry - Out Now',
+  image: '/img-2.jpg',
+}
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -13,6 +17,46 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'author', name: 'author', content: 'Mars Argo' },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: 'Mars Argo',
+      },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Mars Argo' },
+      { hid: 'theme-color', name: 'theme-color', content: '#201F94' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: meta_stuff.description,
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: meta_stuff.description,
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: meta_stuff.description,
+      },
+      { hid: 'og:title', name: 'og:title', content: 'Mars Argo' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Mars Argo' },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: meta_stuff.image,
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: meta_stuff.image,
+      },
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },

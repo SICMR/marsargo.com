@@ -1,7 +1,7 @@
 <template>
   <div class="main-vibe container">
     <div class="the-image">
-      <img src="/img.jpg" alt="">
+      <img src="/img-2.jpg" alt="" />
     </div>
     <ul class="main-links">
       <li><a target="_blank" href="https://open.spotify.com/artist/3WFBuQFguwRNZcPyQrtBEU">Listen on Spotify</a></li>
@@ -12,59 +12,69 @@
 </template>
 
 <script>
-
 export default {
-
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My custom description',
+        },
+      ],
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-  .main-vibe {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 0 10vw;
+.main-vibe {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 10vw;
+
+  @include breakpoint(small) {
+    // padding: 0 20px;
+    display: block;
+    margin-bottom: 15vh;
+  }
+
+  .the-image {
+    width: 40%;
 
     @include breakpoint(small) {
-      // padding: 0 20px;
-      display: block;
-      margin-bottom: 15vh;
-    }    
-
-    .the-image {
-      width: 40%;
-    
-      @include breakpoint(small) {
-        padding: 0;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 40px;
-      }         
-      
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+      padding: 0;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 40px;
     }
 
-    .main-links {
-      font-size: clamp(12px, 1.3vw, 15px);
-      letter-spacing: 0.15em;
-      margin-left: 4vw;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 
-      @include breakpoint(small) {
-        padding: 0;
-        width: 100%;
-        margin: 30px 0;
-      }    
+  .main-links {
+    font-size: clamp(12px, 1.3vw, 15px);
+    letter-spacing: 0.15em;
+    margin-left: 4vw;
 
-      li {
-        margin-bottom: 14px;
+    @include breakpoint(small) {
+      padding: 0;
+      width: 100%;
+      margin: 30px 0;
+    }
 
-        &:last-of-type {
-          margin-bottom: 0;
-        }
+    li {
+      margin-bottom: 14px;
+
+      &:last-of-type {
+        margin-bottom: 0;
       }
     }
   }
+}
 </style>
