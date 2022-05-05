@@ -1,6 +1,6 @@
 const meta_stuff = {
   description: 'Angry - Out Now',
-  image: '/img-2.jpg',
+  image: 'https://www.marsargo.com/img-2.jpg',
 }
 export default {
   // Target: https://go.nuxtjs.dev/config-target
