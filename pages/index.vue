@@ -1,7 +1,7 @@
 <template>
   <div class="main-vibe container">
     <div class="the-image">
-      <img src="/img-2.jpg" alt="" />
+      <img width="1600" height="1600" src="/img-2.jpg" alt="Mars Argo - Angry artwork" />
     </div>
     <ul class="main-links">
       <li><a target="_blank" href="https://open.spotify.com/artist/3WFBuQFguwRNZcPyQrtBEU">Listen on Spotify</a></li>
