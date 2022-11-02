@@ -58,7 +58,7 @@ export default {
         content: meta_stuff.image,
       },
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    link: [{ rel: 'icon', type: 'image/jpeg', href: '/favicon.jpg' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
