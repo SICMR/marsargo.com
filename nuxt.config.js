@@ -24,7 +24,7 @@ export default {
         content: 'Mars Argo',
       },
       { hid: 'og:site_name', name: 'og:site_name', content: 'Mars Argo' },
-      { hid: 'theme-color', name: 'theme-color', content: '#201F94' },
+      { hid: 'theme-color', name: 'theme-color', content: '#000000' },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
